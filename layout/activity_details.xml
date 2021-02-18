@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#75F43636"
+    tools:context=".Details">
+
+
+    <TextView
+        android:id="@+id/headinglabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="700dp"
+        android:height="80dp"
+        android:background="#B103DA9D"
+        android:text="WELCOME,BONJOUR"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:text="First Name"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headinglabel"></TextView>
+
+
+    <EditText
+        android:id="@+id/firstnametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="40dp"
+        android:width="250dp"
+        android:height="50dp"
+        android:hint="enter first name"
+        app:layout_constraintLeft_toRightOf="@+id/firstname"
+        app:layout_constraintTop_toBottomOf="@+id/headinglabel"
+
+        ></EditText>
+
+
+    <TextView
+        android:id="@+id/lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:text="Last Name"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstname"></TextView>
+
+
+    <EditText
+        android:id="@+id/usertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="40dp"
+        android:width="250dp"
+        android:height="50dp"
+        android:hint="enter last name"
+        app:layout_constraintLeft_toRightOf="@+id/lastname"
+        app:layout_constraintTop_toBottomOf="@+id/firstnametext"
+
+        ></EditText>
+
+    <TextView
+        android:id="@+id/emailid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:text="Email Id"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastname"
+
+        ></TextView>
+
+    <EditText
+        android:id="@+id/emailidtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="55dp"
+        android:width="250dp"
+        android:height="50dp"
+        android:hint="enter email id"
+        app:layout_constraintLeft_toRightOf="@+id/emailid"
+        app:layout_constraintTop_toBottomOf="@+id/usertext"
+
+        ></EditText>
+
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:text="Password"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailid"
+
+        ></TextView>
+
+
+    <EditText
+        android:id="@+id/passwordtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="55dp"
+        android:width="250dp"
+        android:height="50dp"
+        android:hint="enter password"
+        app:layout_constraintLeft_toRightOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/emailidtext"
+
+        ></EditText>
+
+    <TextView
+        android:id="@+id/repassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:width="160dp"
+        android:padding="10dp"
+        android:text="Enter password again"
+
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        tools:visibility="visible"></TextView>
+
+
+    <EditText
+        android:id="@+id/repasswordtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="90dp"
+        android:width="250dp"
+        android:height="50dp"
+        android:hint="confirm password"
+        app:layout_constraintLeft_toRightOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/passwordtext"
+
+        ></EditText>
+
+
+    <Button
+        android:id="@+id/signupdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="Clickfunction"
+        android:text="Sign-Up"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repassword"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

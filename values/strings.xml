@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Form</string>
+    <string name="CreateAccount">
+
+        <a href="activity_details.xml">Click  to Create account</a>
+    </string>
+</resources>

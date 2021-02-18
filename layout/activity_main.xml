@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerlayout"
+    tools:openDrawer="end"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context=".MainActivity">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <androidx.appcompat.widget.Toolbar
+              android:id="@+id/toolbard"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/design_default_color_primary_dark"
+              android:theme="@style/TextAppearance.AppCompat"></androidx.appcompat.widget.Toolbar>
+
+
+    <Button
+        android:id="@+id/Signup"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Sign-up"
+        android:textSize="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="fillsignupdetails"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="42dp"></Button>
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="30dp"
+        android:onClick="loginDetails"
+        android:text="Login"
+        android:textSize="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Signup"></Button>
+
+      </LinearLayout>
+
+
+<com.google.android.material.navigation.NavigationView
+    android:layout_width="240dp"
+    android:id="@+id/design_navigation_view"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="#ffffff"
+    app:headerLayout="@layout/nav_header"
+    app:menu="@menu/drawer_menu">
+
+
+
+</com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>
